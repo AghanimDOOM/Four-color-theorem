@@ -1,20 +1,5 @@
-中文
-结论：
-最多4种颜色是成立的。
-证明过程：
-首先，该问题可以转换为，平面上最多有几个点，使用线段两两相互连接但不出现交叉的情况？
-然后，对于两个点而言，只存在一种形式。
-其次，对于三个点而言，使用线段两两相连接最终只能形成一个三角形。
-再次，对于四个点而言，如果使用线段两两连接剩下的三个点第，则第四个点必须在三角形内部或者外部。如果第四个点在三角形内部，则与外部隔绝。如果第四个点在三角形外部，则连接完成后，三角形的某一个顶点必然在新的三角形内部。
-最后，对于五个点而言，无论是上述哪种情况，第五个点无法与上述四个点两两相连接且不出现交叉。
-证明完毕。
-English
-Conclusion:
-A maximum of 4 colors are established.
-Proof Process:
-First of all, the problem can be converted to, at most how many points are there on the plane, using the case where the segments are connected to each other in pairs but do not intersect?
-Then, for the two points, only one form exists.
-Second, for three points, using line segments to connect them in pairs can only end up forming a triangle.
-Again, for four points, if you use a line segment to connect the remaining three points, the fourth point must be inside or outside the triangle. If the fourth point is inside the triangle, it is isolated from the outside. If the fourth point is outside the triangle, one of the vertices of the triangle must be inside the new triangle after the connection is complete.
-Finally, for the five points, in either case, the fifth point cannot be connected to the four points and does not cross.
-Proof is complete.
+边连接区域证明：
+k5能够这证明边连接的方式，四色定理成立。对于点连接区域，这类方法不适用。
+点连接区域证明：
+对于仅仅点接触的区域，使用相同的颜色上色。扩张这些区域的连接，使这些区域变为一个整体，并分割该区域存在的其他点连接区域。最终所有的点连接的区域都转换为边连接区域，且二者等价。然后再次使用k5证明。
+具体实现方式示意图：four-color-theorem.png
